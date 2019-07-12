@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Bio /> Should match snapshot 1`] = `
+<div
+  className="ui text container"
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <h2
+    className="ui header"
+  />
+  <p>
+    Height: 
+     Weight: 
+  </p>
+  <p>
+    Hair: 
+     Skin: 
+  </p>
+  <p>
+    Eyes: 
+     YOB: 
+  </p>
+  <p>
+    Gender: 
+  </p>
+</div>
+`;
