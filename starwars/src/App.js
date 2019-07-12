@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import { Bio } from './components/Bio'
+import { Header, Container } from 'semantic-ui-react';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -19,10 +20,19 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <Container text style={{
+      display: 'flex',
+      flexDirection: 'column'
+    }}>
+      <Header as='h1'>React Wars</Header>
+      <Container text style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      width: '800px'
+      }}>
       {characters.map((char) => {return <Bio char={char} key={char.url} />})}
-    </div>
+      </Container>
+    </Container>
   );
 }
 
